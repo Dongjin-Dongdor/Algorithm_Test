@@ -5,16 +5,10 @@
 import java.util.Stack;
 public class binaryGap {
 
-    public static void main(String[] args){
-        int kk;
-
-        kk = solution(141);
-
-    }
 
     static int maxCount = 0;
     static int count = 0;
-    public static int solution(int N) {
+    public int solution(int N) {
 
 
         int binaryNum;
@@ -25,11 +19,11 @@ public class binaryGap {
             binaryNum = N%2;
             N = N/2;
             st.push(binaryNum);
-
         }
 
-        gap = findGap(st);
 
+        gap = findGap(st);
+        System.out.println(gap);
         return gap;
     }
 
@@ -42,14 +36,14 @@ public class binaryGap {
                 if(count > maxCount){
                     maxCount = count;
                     count = 0;
-                    System.out.println("here");
+
                 }
+
                 return findGap(st);
             }
             else{
                 count++;
-                System.out.println("count : "+count);
-                System.out.println("maxCount : "+maxCount);
+
                 return findGap(st);
 
             }
