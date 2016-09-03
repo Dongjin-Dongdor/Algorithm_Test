@@ -27,6 +27,8 @@ public class binaryGap {
         return gap;
     }
 
+
+
     public static int findGap(Stack<Integer> st){
         if(st.isEmpty()){
             return maxCount;

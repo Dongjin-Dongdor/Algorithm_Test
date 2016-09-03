@@ -17,7 +17,7 @@ public class rotateNum {
         int[] A = {3,8,9,7,6};
         solution(A,3);
     }
-    public  int[] solution(int[] A, int K) {
+    static int[] solution(int[] A, int K) {
         // write your code in Java SE 8
 
         for(int i = A.length -1; i>=0; i--){
