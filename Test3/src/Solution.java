@@ -2,45 +2,52 @@
 import java.util.LinkedList;
 public class Solution{
 
+    //Node
     class Node{
-
         private int data;
         private Node nextNode;
         public Node(int data){
 
             this.data = data;
             this.nextNode = null;
-
         }
 
         public void setData(int data){
             this.data = data;
         }
-        public void setNextNode(Node nextNode){
-            this.nextNode = nextNode;
+
+        public void setNextNode(Node newNode){
+            this.nextNode = newNode;
         }
 
         public int getData(){
             return this.data;
         }
 
-        public Node getNext(){
+        public Node getNextNode(){
             return this.nextNode;
         }
-
     }
-    LinkedList<Solution>  solutionList;
-    Node headNode;
+
+    //Stack
     public Solution(){
 
-        solutionList = new LinkedList<Solution>();
-        headNode = null;
     }
 
-    public void push(int value){
-        Node newNode = new Node(value);
+    public void push(){
+
+    }
+    public int top(){
+
+    }
+    public void pop(){
+
     }
 
+    public void begin(){
+
+    }
+    
 
 
 
