@@ -20,11 +20,7 @@ public class Main {
             score[i] = sc.nextInt();
             sc.nextLine();
         }
-
-        //첫번째 계단의 점수 최대값은 그냥 첫번째 점수의 값이 계산
-
         dp[1][1] = dp[1][2] = score[1];
-
         for(int i = 2; i<=n; i++){
 
             dp[i][1] = dp[i - 1][2] + score[i];
